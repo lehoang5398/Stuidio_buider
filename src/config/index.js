@@ -7,6 +7,7 @@ export const APP_NAME = 'Cryptizen';
 export const APP_NAME_EXPLORER = 'Cryptizen Explorer';
 export const APP_DOMAIN = NODE_ENV === 'production' ? '' : '';
 export const APP_TYPE = NODE_ENV === 'production' ? 'BETANET' : 'TESTNET';
+export const APP_API = 'http://localhost:3000/v1';
 
 export const CRYPTIZEN_SOCIAL = {
   facebook: 'https://www.facebook.com/Cryptizen',

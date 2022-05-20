@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import { createInjectorsEnhancer } from 'redux-injectors';
 import createSagaMiddleware from 'redux-saga';
@@ -17,7 +18,8 @@ function createReducer(injectedReducers = {}) {
 }
 
 export default () => {
-  const composeEnhancers = compose;
+  const composeEnhancers =
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   const sagaMiddleware = createSagaMiddleware();
   const runSaga = sagaMiddleware.run;
 
@@ -28,7 +30,7 @@ export default () => {
 
   const store = createStore(
     createReducer(),
-    composeEnhancers(applyMiddleware(sagaMiddleware), injectEnhancer),
+    composeEnhancers(applyMiddleware(sagaMiddleware), injectEnhancer)
   );
 
   store.injectedReducers = {};

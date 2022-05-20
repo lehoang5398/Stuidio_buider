@@ -1,9 +1,9 @@
 import Axios from 'axios';
 
-import { APP_URL_API } from '../config';
+import { APP_URL_API, APP_API } from '../config';
 
 const AxiosClient = Axios.create({
-  baseURL: APP_URL_API,
+  baseURL: APP_API,
   headers: {
     'Content-Type': 'application/json',
   },

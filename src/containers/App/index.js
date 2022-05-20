@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { useInjectSaga } from 'redux-injectors';
 import { Helmet } from 'react-helmet';
 import { APP_NAME_EXPLORER } from 'config';
+import { Toaster } from 'react-hot-toast';
 import routesMap from './routesMap';
 import saga from './saga';
 import LocationChangeListen from './LocationChangeListen';
@@ -23,6 +24,7 @@ const App = () => {
         ))}
       </Switch>
       <LocationChangeListen />
+      <Toaster />
     </>
   );
 };

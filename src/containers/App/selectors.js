@@ -8,3 +8,12 @@ export const makeSelectGlobal = () =>
 
 export const makeSelectIsDarkMode = () =>
   createSelector(selectGlobal, (state) => state.darkMode);
+
+export const makeSelectUser = () =>
+  createSelector(selectGlobal, (state) => state.user);
+
+export const makeSelectRefreshToken = () =>
+  createSelector(selectGlobal, (state) => state.refreshToken);
+
+export const makeSelectAccessToken = () =>
+  createSelector(selectGlobal, (state) => state.accessToken);

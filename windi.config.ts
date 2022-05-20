@@ -10,13 +10,14 @@ export default defineConfig({
   attributify: true,
   shortcuts: {
     // btn: 'rounded-lg border border-gray-300 text-gray-100 bg-blue-500 px-4 py-2 m-2 inline-block hover:shadow',
-    'section-box': 'rounded-xl border border-blue-gray-200 shadow-lg bg-white bg-opacity-40',
+    'section-box':
+      'rounded-xl border border-blue-gray-200 shadow-lg bg-white bg-opacity-40',
   },
   theme: {
     extend: {
       fontFamily: {
-        body: ['Poppins','-apple-system','BlinkMacSystemFont','sans-serif'],
-        sans: ['Poppins','-apple-system','BlinkMacSystemFont','sans-serif'],
+        body: ['Poppins', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        sans: ['Poppins', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
         captain: ['American Captain', 'Open Sans', 'ui-sans-serif'],
       },
       colors: {
@@ -80,7 +81,7 @@ export default defineConfig({
           DEFAULT: '1rem',
           lg: '0rem',
         },
-      }
+      },
     },
   },
   plugins: [

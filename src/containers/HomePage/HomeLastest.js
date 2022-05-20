@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import IpfsImage from 'assets/images/Ipfs.png';
 import LoadingIcon from 'components/LoadingIcon';
 import { truncate, capitalize } from 'utils';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { useScreen } from 'shared-hooks/useScreen';
 import routes from 'containers/App/routes';

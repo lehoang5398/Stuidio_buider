@@ -34,10 +34,10 @@ const homePageReducer = (state = initialState, action) =>
         draft.cids = action.cids;
         break;
       case SET_IS_LOADING_TRANSACTIONS:
-        draft.transactions = action.transactions;
+        draft.isLoadingTransactions = action.isLoadingTransactions;
         break;
       case SET_TRANSACTIONS:
-        draft.isLoadingTransactions = action.isLoadingTransactions;
+        draft.transactions = action.transactions;
         break;
     }
   });

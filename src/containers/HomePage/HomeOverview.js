@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -77,7 +78,7 @@ function HomeOverview({ dispatch, totalOverviews }) {
             <div className="ml-4">
               <div className="text-xs font-medium text-gray-500">
                 {`${APP_NAME.toUpperCase()} ${t(
-                  'marketCapOnBsc',
+                  'marketCapOnBsc'
                 ).toUpperCase()}`}
               </div>
               <div>
